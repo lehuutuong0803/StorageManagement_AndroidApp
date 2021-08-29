@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewHinhAnh"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ten SP"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/textviewTenSP"/>
+    <TextView
+        android:id="@+id/textviewIDSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below ="@+id/textviewTenSP"
+        android:text="Id SP"/>
+    <TextView
+        android:id="@+id/textviewGiaNhapSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below ="@+id/textviewTenSP"
+        android:text="Gia Nhap SP"/>
+    <TextView
+        android:id="@+id/textviewGiaBanSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below ="@+id/textviewTenSP"
+        android:text="Gia Ban SP"/>
+    <TextView
+        android:id="@+id/textviewSoLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below ="@+id/textviewTenSP"
+        android:text="So Luong SP"/>
+    <TextView
+        android:id="@+id/textviewIDLoaiSP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below ="@+id/textviewTenSP"
+        android:text="Ten Loai"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_gravity="right"
+            />
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageAnhSPCTM"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên SP"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:id="@+id/textViewTenSPCTM"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số Lượng Còn"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/textViewSoLuongCTM"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá Bán"
+            android:textSize="20dp"
+            android:textColor="#C81010"
+            android:id="@+id/textViewGiaBanCTM"
+            />
+    </LinearLayout>
+
+</LinearLayout>

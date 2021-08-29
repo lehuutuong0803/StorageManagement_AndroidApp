@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textviewIDHDBanLSDH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Hóa Đơn Bán"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/textviewIDKHLSDH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Khách Hàng"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/textviewNgayDatLSDH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày Đặt"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/textviewGhiChuLSDH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi chu"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/textviewTongTienLSDH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng Tiền"
+        android:textColor="#E80D0D"
+        android:textSize="25dp"/>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem chi tiết"
+            android:id="@+id/btXemChiTietLSDH"/>
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Đơn Đang HT"
+            android:id="@+id/btHoanThanhLSDH"
+            android:backgroundTint="#D80C0C"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

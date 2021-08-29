@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageViewAnhSPCTHD"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/textviewTenSPCTHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên SP"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/textviewGiaBanSPCTHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá Bán SP"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/textviewSoLuongSPCTHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số Lượng Bán SP"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/textviewThanhTienSPCTHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thành Tiền SP"
+                android:textColor="#911721"
+                android:textSize="20dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="Trang chủ"
+        android:id="@+id/menuTrangChu"
+        app:showAsAction="always"
+        />
+    <item android:title="Quản lý loại sản phẩm"
+        android:id="@+id/menuQuanLyLoaiSP"
+        />
+    <item android:title="Quản lý sản phẩm"
+        android:id="@+id/menuQuanLySP"
+        />
+    <item android:title="Hóa Đơn Bán"
+        android:id="@+id/menuHoaDonBan"
+        />
+    <item android:title="Đăng xuất"
+        android:id="@+id/menuDangXuat"
+        />
+</menu>

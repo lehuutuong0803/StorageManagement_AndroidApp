@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManHinh_qlSp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản Lý Sản Phẩm"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="#C1DDBC18"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_margin="7dp"
+            android:id="@+id/btnThemSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm" />
+        <Button
+            android:layout_margin="7dp"
+            android:id="@+id/btnTimKiemSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tìm Kiếm"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvSP"/>
+
+
+</LinearLayout>

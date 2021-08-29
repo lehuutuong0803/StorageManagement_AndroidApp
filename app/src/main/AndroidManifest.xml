@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shop10">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Shop10">
+        <activity android:name=".Customer.activity_Ctsp"></activity>
+        <activity android:name=".Customer.activity_Donhang" />
+        <activity android:name=".Customer.activity_Lichsudonhang" />
+        <activity android:name=".Customer.activity_qlTaiKhoan" />
+        <activity android:name=".activity_xemchitiet_hdban" />
+        <activity android:name=".activity_sua_sp" />
+        <activity android:name=".activity_them_sp" />
+        <activity android:name=".activity_sua_loaisp" />
+        <activity android:name=".ManHinh_qlHoadonban" />
+        <activity android:name=".ManHinh_qlSp" />
+        <activity android:name=".ManHinh_qlLoaisp" />
+        <activity android:name=".Customer.ManHinh_Customer" />
+        <activity android:name=".ManHinh_User" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

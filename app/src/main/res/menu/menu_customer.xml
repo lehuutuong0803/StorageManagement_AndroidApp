@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Trang chủ"
+        android:id="@+id/menuTrangChuCTM"
+        app:showAsAction="always"
+        />
+    <item android:title="Tài khoản"
+        android:id="@+id/menuQuanLyTaiKhoan"
+        />
+    <item android:title="Lịch sư đơn hàng"
+        android:id="@+id/menuLichSuDonHang"
+        />
+    <item android:title="Đơn hàng"
+        android:id="@+id/menuDonHang"
+        />
+    <item android:title="Đăng xuất"
+        android:id="@+id/menuDangXuatCTM"
+        />
+</menu>

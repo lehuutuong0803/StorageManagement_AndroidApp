@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.activity_qlTaiKhoan"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tài Khoản"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="#C1DDBC18"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên Người Dùng"
+        android:textSize="20dp"
+        android:textColor="#B50E0E"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTenNguoiDung"
+        android:text="Tên Người dùng"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số Điện Thoại"
+        android:textSize="20dp"
+        android:textColor="#B50E0E"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSDT"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Số Điện Thoại"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa Chỉ"
+        android:textSize="20dp"
+        android:textColor="#B50E0E"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDiaChi"
+        android:textSize="20dp"
+        android:text="Địa Chỉ"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_margin="7dp"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật thông tin"
+        android:id="@+id/btnCapNhatThongTin1"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Đổi mật khuẩu"
+        android:id="@+id/btnDoiMatKhuau"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
