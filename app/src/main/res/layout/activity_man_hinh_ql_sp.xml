@@ -16,7 +16,24 @@
         android:background="#C1DDBC18"
         android:textColor="@color/black"
         />
-
+    <TextView
+        android:id="@+id/SP_TenSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên Sp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/SP_GiaSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá Sp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

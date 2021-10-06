@@ -36,12 +36,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.example.shop10.common.ip;
+
 public class HoaDonBan_Adapter extends BaseAdapter {
     private ManHinh_qlHoadonban context;
     private int layout;
     private List<HoaDonBan> loaiHDBanList;
-//    private String urlUpdate = "https://tuong123.000webhostapp.com/AndroidWebService/UpdateInvoice.php";
-    private String urlUpdate = "http://192.168.1.44:81/AndroidWebService/UpdateInvoice.php";
+    private String urlUpdate = ip +"/UpdateInvoice.php";
 
     public HoaDonBan_Adapter(ManHinh_qlHoadonban context, int layout, List<HoaDonBan> loaiHDBanList) {
         this.context = context;

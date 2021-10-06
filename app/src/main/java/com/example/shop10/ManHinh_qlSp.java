@@ -5,7 +5,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -15,6 +17,7 @@ import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -39,17 +42,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.example.shop10.common.ip;
+
 public class ManHinh_qlSp extends AppCompatActivity {
 
     ListView lvSP;
     ArrayList<SP> spArrayList;
     SP_Adapter adapter;
     Button btnThem,btnTimKiem;
-//    String urlGetData = "https://tuong123.000webhostapp.com/AndroidWebService/GetDataProduct.php";
-//    String urlSearchIDProduct = "https://tuong123.000webhostapp.com/AndroidWebService/SearchIDProduct.php";
-    String urlGetData = "http://192.168.1.44:81//AndroidWebService/GetDataProduct.php";
-    String urlSearchIDProduct = "http://192.168.1.44:81//AndroidWebService/SearchIDProduct.php";
-
+    String urlGetData = ip +"/GetDataProduct.php";
+    String urlSearchIDProduct = ip +"/SearchIDProduct.php";
+    TextView tensp,giasp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -134,7 +137,8 @@ public class ManHinh_qlSp extends AppCompatActivity {
                                             object.getInt("GiaNhap"),
                                             object.getInt("GiaBan"),
                                             object.getInt("SoLuong"),
-                                            object.getInt("IDLoaiSP")));
+                                            object.getInt("IDLoaiSP"),
+                                            object.getInt("Status")));
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
@@ -227,7 +231,8 @@ public class ManHinh_qlSp extends AppCompatActivity {
                                 object.getInt("GiaNhap"),
                                 object.getInt("GiaBan"),
                                 object.getInt("SoLuong"),
-                                object.getInt("IDLoaiSP")));
+                                object.getInt("IDLoaiSP"),
+                                object.getInt("Status")));
                     }
                     catch (JSONException e)
                     {
@@ -251,6 +256,8 @@ public class ManHinh_qlSp extends AppCompatActivity {
         btnThem = (Button)findViewById(R.id.btnThemSP);
         lvSP = (ListView)findViewById(R.id.lvSP);
         btnTimKiem = (Button)findViewById(R.id.btnTimKiemSP);
+        tensp = (TextView)findViewById(R.id.SP_TenSP);
+        giasp = (TextView)findViewById(R.id.SP_GiaSP);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

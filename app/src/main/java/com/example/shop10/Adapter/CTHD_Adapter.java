@@ -40,6 +40,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.example.shop10.common.ip;
+
 public class CTHD_Adapter extends BaseAdapter {
     private activity_xemchitiet_hdban context;
     private int layout;
@@ -47,8 +49,7 @@ public class CTHD_Adapter extends BaseAdapter {
     private List<CTHD> cthdList;
     private List<SP> spList;
     String tenSP,anhSP;
-//    String urlSearchCTHD = "https://tuong123.000webhostapp.com/AndroidWebService/SearchIDProduct.php";
-    String urlSearchCTHD = "http://192.168.1.44:81/AndroidWebService/SearchIDProduct.php";
+    String urlSearchCTHD = ip +"/SearchIDProduct.php";
     public CTHD_Adapter(activity_xemchitiet_hdban context, int layout, List<CTHD> cthdList,List<SP> spList) {
         this.context = context;
         this.layout = layout;

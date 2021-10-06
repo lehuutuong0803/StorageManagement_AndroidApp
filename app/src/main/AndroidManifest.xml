@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shop10">
-        <activity android:name=".Customer.activity_Ctsp"></activity>
+        <activity android:name=".ManHinh_Live"></activity>
+        <activity android:name=".ManHinh_qlLive" />
+        <activity android:name=".Customer.activity_Ctsp" />
         <activity android:name=".Customer.activity_Donhang" />
         <activity android:name=".Customer.activity_Lichsudonhang" />
         <activity android:name=".Customer.activity_qlTaiKhoan" />

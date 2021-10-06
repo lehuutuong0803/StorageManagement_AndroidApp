@@ -22,14 +22,15 @@ import com.example.shop10.LopSQL.LoaiSP;
 import java.util.HashMap;
 import java.util.Map;
 
-public class activity_sua_loaisp extends AppCompatActivity {
+import static com.example.shop10.common.ip;
+
+public class activity_sua_loaisp extends AppCompatActivity  {
 
     EditText tenloaiSP;
     Button btDongY;
     Button btHuy;
     int id=0;
-//    String url = "https://tuong123.000webhostapp.com/AndroidWebService/UpdateLoaiSP.php";
-    String url = "http://192.168.1.44:81/AndroidWebService/UpdateLoaiSP.php";
+    String url = ip +"/UpdateLoaiSP.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

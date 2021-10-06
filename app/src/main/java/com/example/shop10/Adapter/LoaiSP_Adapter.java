@@ -34,13 +34,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.example.shop10.common.ip;
+
 public class LoaiSP_Adapter extends BaseAdapter {
     private ManHinh_qlLoaisp context;
     private int layout;
     private List<LoaiSP> loaiSPList;
-
-//    String urlDelete = "https://tuong123.000webhostapp.com/AndroidWebService/DeleteLoaiSP.php";
-    String urlDelete = "http://192.168.1.44:81/AndroidWebService/DeleteLoaiSP.php";
+    String urlDelete = ip +"/DeleteLoaiSP.php";
 
 
     public LoaiSP_Adapter(ManHinh_qlLoaisp context, int layout, List<LoaiSP> loaiSPList) {

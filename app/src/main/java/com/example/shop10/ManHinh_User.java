@@ -28,12 +28,13 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.example.shop10.common.ip;
+
 public class ManHinh_User extends AppCompatActivity {
     ArrayList<SP> spArrayList;
     SPUser_Adapter spUser_adapter;
     ListView lvSPUser;
-    //String urlGetData = "https://tuong123.000webhostapp.com/AndroidWebService/GetDataProduct.php";
-    String urlGetData = "http://192.168.1.44:81//AndroidWebService/GetDataProduct.php";
+    String urlGetData = ip +"/GetDataProduct.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +70,8 @@ public class ManHinh_User extends AppCompatActivity {
                                 object.getInt("GiaNhap"),
                                 object.getInt("GiaBan"),
                                 object.getInt("SoLuong"),
-                                object.getInt("IDLoaiSP")));
+                                object.getInt("IDLoaiSP"),
+                                object.getInt("Status")));
                     }
                     catch (JSONException e)
                     {
@@ -123,6 +125,12 @@ public class ManHinh_User extends AppCompatActivity {
                 Intent intent4 = new Intent(ManHinh_User.this,MainActivity.class);
                 startActivity(intent4);
                 Toast.makeText(this,"Bạn chọn Đăng Xuất",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.menuQLLiveStream:
+                Intent intent5 = new Intent(ManHinh_User.this,ManHinh_qlLive.class);
+                intent5.putExtra("TenTaiKhoan","user");
+                startActivity(intent5);
+                Toast.makeText(this,"Bạn chọn LiveStream",Toast.LENGTH_SHORT).show();
                 break;
         }
         return super.onOptionsItemSelected(item);

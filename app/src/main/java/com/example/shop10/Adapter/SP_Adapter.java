@@ -20,12 +20,13 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import static com.example.shop10.common.ip;
+
 public class SP_Adapter extends BaseAdapter {
     private ManHinh_qlSp context;
     private int layout;
     private List<SP> spList;
-//    String urlDeleteProduct = "https://tuong123.000webhostapp.com/AndroidWebService/DeleteProduct.php";
-    String urlDeleteProduct = "http://192.168.1.44:81/AndroidWebService/DeleteProduct.php";
+    String urlDeleteProduct = ip +"/DeleteProduct.php";
 
     public SP_Adapter(ManHinh_qlSp context, int layout, List<SP> spList) {
         this.context = context;

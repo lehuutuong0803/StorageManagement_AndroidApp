@@ -32,6 +32,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.example.shop10.common.ip;
+
 public class activity_xemchitiet_hdban extends AppCompatActivity {
 
     TextView tvIDHDBan, tvTenKH, tvDiaChi, tvSDT, tvNgayBan, tvTongTien, tvGhiChu;
@@ -40,13 +42,9 @@ public class activity_xemchitiet_hdban extends AppCompatActivity {
     ArrayList<CTHD> cthdArrayList;
     ArrayList<SP> spArrayList;
     CTHD_Adapter cthd_adapter;
-
-//    String urlSearchUser = "https://tuong123.000webhostapp.com/AndroidWebService/SearchUser.php";
-//    String urlGetDataCTHD = "https://tuong123.000webhostapp.com/AndroidWebService/GetDataCTHD.php";
-//    String urlGetDataProduct = "https://tuong123.000webhostapp.com/AndroidWebService/GetDataProduct.php";
-    String urlGetDataProduct = "http://192.168.1.44:81/AndroidWebService/GetDataProduct.php";
-    String urlSearchUser = "http://192.168.1.44:81/AndroidWebService/SearchUser.php";
-    String urlGetDataCTHD = "http://192.168.1.44:81/AndroidWebService/GetDataCTHD.php";
+    String urlGetDataProduct = ip + "/GetDataProduct.php";
+    String urlSearchUser = ip + "/SearchUser.php";
+    String urlGetDataCTHD = ip + "/GetDataCTHD.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,7 +92,8 @@ public class activity_xemchitiet_hdban extends AppCompatActivity {
                                 object.getInt("GiaNhap"),
                                 object.getInt("GiaBan"),
                                 object.getInt("SoLuong"),
-                                object.getInt("IDLoaiSP")));
+                                object.getInt("IDLoaiSP"),
+                                object.getInt("Status")));
                     }
                     catch (JSONException e)
                     {

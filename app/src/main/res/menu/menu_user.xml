@@ -16,6 +16,9 @@
     <item android:title="Hóa Đơn Bán"
         android:id="@+id/menuHoaDonBan"
         />
+    <item android:title="LiveStream"
+        android:id="@+id/menuQLLiveStream"
+        />
     <item android:title="Đăng xuất"
         android:id="@+id/menuDangXuat"
         />

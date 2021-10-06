@@ -25,6 +25,7 @@ import com.example.shop10.LopSQL.GioHang;
 import com.example.shop10.LopSQL.SP;
 import com.example.shop10.MainActivity;
 import com.example.shop10.ManHinh_User;
+import com.example.shop10.ManHinh_qlLive;
 import com.example.shop10.ManHinh_qlLoaisp;
 import com.example.shop10.ManHinh_qlSp;
 import com.example.shop10.R;
@@ -35,14 +36,14 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.example.shop10.common.ip;
+
 public class ManHinh_Customer extends AppCompatActivity {
     String tenTK;
     ArrayList<SP> spArrayList;
     SPCTM_Adapter spctm_adapter;
     ListView lvSPCTM;
-
-//    String urlGetData = "https://tuong123.000webhostapp.com/AndroidWebService/GetDataProduct.php";
-    String urlGetData = "http://192.168.1.44:81/AndroidWebService/GetDataProduct.php";
+    String urlGetData = ip +"/GetDataProduct.php";
     public static ArrayList<GioHang> gioHangArrayList;
 
     @Override
@@ -102,7 +103,8 @@ public class ManHinh_Customer extends AppCompatActivity {
                                 object.getInt("GiaNhap"),
                                 object.getInt("GiaBan"),
                                 object.getInt("SoLuong"),
-                                object.getInt("IDLoaiSP")));
+                                object.getInt("IDLoaiSP"),
+                                object.getInt("Status")));
                     }
                     catch (JSONException e)
                     {
@@ -158,6 +160,12 @@ public class ManHinh_Customer extends AppCompatActivity {
                 Intent intent4 = new Intent(ManHinh_Customer.this, MainActivity.class);
                 startActivity(intent4);
                 Toast.makeText(this,"Bạn chọn Đăng Xuất",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.menuLiveStream:
+                Intent intent5 = new Intent(ManHinh_Customer.this, ManHinh_qlLive.class);
+                intent5.putExtra("TenTaiKhoan",tenTK);
+                startActivity(intent5);
+                Toast.makeText(this,"Bạn chọn LiveStream",Toast.LENGTH_SHORT).show();
                 break;
         }
         return super.onOptionsItemSelected(item);

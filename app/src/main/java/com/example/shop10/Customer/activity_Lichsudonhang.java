@@ -34,6 +34,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.example.shop10.common.ip;
+
 public class activity_Lichsudonhang extends AppCompatActivity {
 
     String tenTK;
@@ -41,10 +43,8 @@ public class activity_Lichsudonhang extends AppCompatActivity {
     TextView textViewThongBao;
     ArrayList<HoaDonBan> hDBanArrayList;
     LichSuDonHang_Adapter lichSuDonHang_adapter;
-//    String urlGetDataInvoice ="https://tuong123.000webhostapp.com/AndroidWebService/SearchIDInvoice.php";
-//    String urlGetData = "https://tuong123.000webhostapp.com/AndroidWebService/SearchAccount.php";
-    String urlGetDataInvoice ="http://192.168.1.44:81/AndroidWebService/SearchIDInvoice.php";
-    String urlGetData = "http://192.168.1.44:81/AndroidWebService/SearchAccount.php";
+    String urlGetDataInvoice = ip +"/SearchIDInvoice.php";
+    String urlGetData = ip +"/SearchAccount.php";
     ArrayList<User> userArrayList;
     String idKH="";
     @Override
@@ -117,7 +117,6 @@ public class activity_Lichsudonhang extends AppCompatActivity {
             public void onResponse(String response) {
                 try {
                     JSONArray jsonArray = new JSONArray(response);
-                    Toast.makeText(activity_Lichsudonhang.this, "Danh Sach Mảng: "+response, Toast.LENGTH_SHORT).show();
                     if(jsonArray.length()==0)
                     {
                         Toast.makeText(activity_Lichsudonhang.this, "Bạn chưa có hóa đơn nào!", Toast.LENGTH_SHORT).show();

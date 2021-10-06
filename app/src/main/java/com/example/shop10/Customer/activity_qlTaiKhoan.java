@@ -36,18 +36,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.example.shop10.common.ip;
+
 public class activity_qlTaiKhoan extends AppCompatActivity {
     String tenTK;
     TextView tvtenNguoiDung, tvSDT, tvDiaChi;
     Button btCapNhapThongTin, btDoiMatKhuau;
-//    String urlGetData = "https://tuong123.000webhostapp.com/AndroidWebService/SearchAccount.php";
-//    String urlUpdateAccount ="https://tuong123.000webhostapp.com/AndroidWebService/UpdateAccount.php";
-//    String urlLogin = "https://tuong123.000webhostapp.com/AndroidWebService/LoginApp.php";
-//    String urlChangePassWord = "https://tuong123.000webhostapp.com/AndroidWebService/ChangePassWord.php";
-    String urlGetData = "http://192.168.1.44:81/AndroidWebService/SearchAccount.php";
-    String urlUpdateAccount ="http://192.168.1.44:81/AndroidWebService/UpdateAccount.php";
-    String urlLogin = "http://192.168.1.44:81/AndroidWebService/LoginApp.php";
-    String urlChangePassWord = "http://192.168.1.44:81/AndroidWebService/ChangePassWord.php";
+    String urlGetData = ip +"/SearchAccount.php";
+    String urlUpdateAccount = ip +"/UpdateAccount.php";
+    String urlLogin = ip +"/LoginApp.php";
+    String urlChangePassWord = ip +"/ChangePassWord.php";
     ArrayList<User> userArrayList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

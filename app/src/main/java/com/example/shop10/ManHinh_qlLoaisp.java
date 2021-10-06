@@ -35,6 +35,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.example.shop10.common.ip;
+
     public class ManHinh_qlLoaisp extends AppCompatActivity {
 
     ListView lvLoaiSP;
@@ -42,10 +44,8 @@ import java.util.Map;
     LoaiSP_Adapter loaiSPAdapter;
     Button btnThem;
     MainActivity mainActivity;
-//    String url = "https://tuong123.000webhostapp.com/AndroidWebService/getData.php";
-//    String urlInsert = "https://tuong123.000webhostapp.com/AndroidWebService/Insert.php";
-        String url = "http://192.168.1.44:81/AndroidWebService/getData.php";
-        String urlInsert = "http://192.168.1.44:81/AndroidWebService/Insert.php";
+        String url = ip +"/getData.php";
+        String urlInsert = ip +"/Insert.php";
 
 
     @Override

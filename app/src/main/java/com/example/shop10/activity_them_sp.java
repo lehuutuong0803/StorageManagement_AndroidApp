@@ -60,12 +60,13 @@ import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 
+import static com.example.shop10.common.ip;
+
 public class activity_them_sp extends AppCompatActivity {
     Spinner spinnerIDLoaiSP;
     ArrayList<Integer> arrayListIDLoaiSP = new ArrayList<Integer>();
     ArrayAdapter spinnerAdapter;
-//    String urlGetDataIDLoaiSP = "https://tuong123.000webhostapp.com/AndroidWebService/getData.php";
-    String urlGetDataIDLoaiSP = "http://192.168.1.44:81/AndroidWebService/getData.php";
+    String urlGetDataIDLoaiSP = ip + "/getData.php";
     String IDLoaiSP;
     Button btnDongY, btnHuy;
     EditText edtTenSP, edtGiaNhap, edtGiaBan, edtSoLuong;
@@ -77,7 +78,7 @@ public class activity_them_sp extends AppCompatActivity {
     Uri uri;
     Bitmap bitmap;
     String tenSP,  anhSP, giaNhap, giaBan, soLuong;
-    int j=0;
+    int j=0, status = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -187,7 +188,7 @@ public class activity_them_sp extends AppCompatActivity {
                                 if(messenger.length()>0)
                                 {
                                     Dataclient insertData = APIUtils.getData();
-                                    retrofit2.Call<String> callBack = insertData.insertData(tenSP,APIUtils.Base_Url +"image/"+messenger,giaNhap,giaBan,soLuong,IDLoaiSP);
+                                    retrofit2.Call<String> callBack = insertData.insertData(tenSP,APIUtils.Base_Url +"image/"+messenger,giaNhap,giaBan,soLuong,IDLoaiSP,String.valueOf(status));
                                     callBack.enqueue(new Callback<String>() {
                                         @Override
                                         public void onResponse(Call<String> call, retrofit2.Response<String> response) {

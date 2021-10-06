@@ -20,7 +20,8 @@ public interface Dataclient {
                             ,@Field("gianhap1") String giaNhap
                             ,@Field("giaban1") String giaBan
                             ,@Field("soluong1") String soLuong
-                            ,@Field("idloaisp2") String idLoaiSP);
+                            ,@Field("idloaisp2") String idLoaiSP
+                            ,@Field("status") String status);
     @FormUrlEncoded
     @POST("UpdateProduct.php")
     Call<String> updateData(@Field("idsp") String idSP

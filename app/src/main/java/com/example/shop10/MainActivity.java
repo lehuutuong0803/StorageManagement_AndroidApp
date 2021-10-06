@@ -27,6 +27,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.example.shop10.common.ip;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText editTextTK,editTextMK;
@@ -34,12 +36,9 @@ public class MainActivity extends AppCompatActivity {
     SQLiteHeper data;
     ArrayList<User> userArrayList;
     ArrayList<LoaiSP> loaiSPArrayList = new ArrayList<>();
-//    String urlLogin = "https://tuong123.000webhostapp.com/AndroidWebService/LoginApp.php";
-//    String urlCheck = "https://tuong123.000webhostapp.com/AndroidWebService/CheckAccount.php";
-//    String urlInsert ="https://tuong123.000webhostapp.com/AndroidWebService/InsertAccount.php";
-    String urlLogin = "http://192.168.1.44:81/AndroidWebService/LoginApp.php";
-    String urlCheck = "http://192.168.1.44:81/AndroidWebService/CheckAccount.php";
-    String urlInsert ="http://192.168.1.44:81/AndroidWebService/InsertAccount.php";
+    String urlLogin = ip+ "/LoginApp.php";
+    String urlCheck = ip+ "/CheckAccount.php";
+    String urlInsert = ip+ "/InsertAccount.php";
 
 
     @Override
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         AnhXa();
         ControlButton();
-
+        buttonDK.setEnabled(true);
     }
     private void ControlButton() {
 
@@ -88,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
                 EditText editTextDiaChi = (EditText)dialog.findViewById(R.id.etDiaChi);
                 Button btDongy = (Button)dialog.findViewById(R.id.btDongY);
                 Button btHuy = (Button)dialog.findViewById((R.id.btHuy));
-
 
                 editTextMK1.setInputType(InputType.TYPE_CLASS_TEXT |
                         InputType.TYPE_TEXT_VARIATION_PASSWORD);

@@ -28,13 +28,14 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.example.shop10.common.ip;
+
 public class ManHinh_qlHoadonban extends AppCompatActivity {
 
     ListView lvHDBan;
     ArrayList<HoaDonBan> hDBanArrayList;
     HoaDonBan_Adapter hDBanAdapter;
-   // String urlGetDataInvoice ="https://tuong123.000webhostapp.com/AndroidWebService/GetDataInvoice.php";
-   String urlGetDataInvoice ="http://192.168.1.44:81/AndroidWebService/GetDataInvoice.php";
+   String urlGetDataInvoice = ip + "/GetDataInvoice.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

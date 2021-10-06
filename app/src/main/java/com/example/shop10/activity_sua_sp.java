@@ -57,12 +57,13 @@ import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 
+import static com.example.shop10.common.ip;
+
 public class activity_sua_sp extends AppCompatActivity {
     Spinner spinnerIDLoaiSP;
     ArrayList<Integer> arrayListIDLoaiSP = new ArrayList<Integer>();
     ArrayAdapter spinnerAdapter;
-//    String urlGetDataIDLoaiSP = "https://tuong123.000webhostapp.com/AndroidWebService/getData.php";
-    String urlGetDataIDLoaiSP = "http://192.168.1.44:81/AndroidWebService/getData.php";
+    String urlGetDataIDLoaiSP = ip + "/getData.php";
     Button btnDongY, btnHuy;
     EditText edtTenSP, edtAnhSP, edtGiaNhap, edtGiaBan, edtSoLuong;
     ImageView imageViewAnhSP;

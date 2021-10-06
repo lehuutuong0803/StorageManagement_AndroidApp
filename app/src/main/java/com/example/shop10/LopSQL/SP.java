@@ -3,10 +3,10 @@ package com.example.shop10.LopSQL;
 import java.io.Serializable;
 
 public class SP implements Serializable {
-    public int idsp, idloaisp,gianhap,giaban,soluongsp;
+    public int idsp, idloaisp,gianhap,giaban,soluongsp,status;
     public String tensp, hinhanhsp;
 
-    public SP(int idsp, String tensp  , String hinhanhsp, int gianhap, int giaban, int soluongsp,int idloaisp) {
+    public SP(int idsp, String tensp  , String hinhanhsp, int gianhap, int giaban, int soluongsp,int idloaisp,int status) {
         this.idsp = idsp;
         this.idloaisp = idloaisp;
         this.gianhap = gianhap;
@@ -14,6 +14,18 @@ public class SP implements Serializable {
         this.soluongsp = soluongsp;
         this.tensp = tensp;
         this.hinhanhsp = hinhanhsp;
+        this.status = status;
+    }
+    public SP()
+    {
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 
     public int getIdsp() {

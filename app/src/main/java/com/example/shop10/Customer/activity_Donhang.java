@@ -41,6 +41,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.example.shop10.common.ip;
+
 public class activity_Donhang extends AppCompatActivity {
     GioHang_Adapter gioHang_adapter;
     ListView lvGioHang;
@@ -49,14 +51,10 @@ public class activity_Donhang extends AppCompatActivity {
     Button btnDatHang, btnTiepTucMuaHang;
     EditText editTextGhiChu;
     String tenTK;
-//    String urlCreateInvoice = "https://tuong123.000webhostapp.com/AndroidWebService/CreateInvoice.php";
-//    String urlGetData = "https://tuong123.000webhostapp.com/AndroidWebService/SearchAccount.php";
-//    String urlInsertDetailsInvoice = "https://tuong123.000webhostapp.com/AndroidWebService/InsertDetailsInvoice.php";
-//    String urlUpdateQuantity = "https://tuong123.000webhostapp.com/AndroidWebService/UpdateQuantity.php";
-    String urlCreateInvoice = "http://192.168.1.44:81/AndroidWebService/CreateInvoice.php";
-    String urlGetData = "http://192.168.1.44:81/AndroidWebService/SearchAccount.php";
-    String urlInsertDetailsInvoice = "http://192.168.1.44:81/AndroidWebService/InsertDetailsInvoice.php";
-    String urlUpdateQuantity = "http://192.168.1.44:81/AndroidWebService/UpdateQuantity.php";
+    String urlCreateInvoice = ip +"/CreateInvoice.php";
+    String urlGetData = ip +"/SearchAccount.php";
+    String urlInsertDetailsInvoice = ip +"/InsertDetailsInvoice.php";
+    String urlUpdateQuantity = ip +"/UpdateQuantity.php";
     ArrayList<User> userArrayList;
     String idHD;
     static long tongTien;
